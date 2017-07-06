@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sincerly.tbanner.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.sincerly.tbanner.banner.TBanner
+                android:id="@+id/banner1"
+                android:background="#70000000"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                app:autoPlay="true"
+                app:time="2000"
+                app:bannerLayout="@layout/view_layout_banner"
+                app:titleBackGround="#00545454"
+                app:indicatorWidth="4dp"
+                app:indicatorHeight="4dp"
+                app:indicatorNormalDrawable="@drawable/oval_blue"
+                app:indicatorSelectedDrawable="@drawable/oval_white"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+            <com.sincerly.tbanner.banner.TBanner
+                android:id="@+id/banner2"
+                android:background="#70000000"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                app:autoPlay="true"
+                app:time="2000"
+                app:bannerLayout="@layout/view_layout_banner"
+
+                app:titleBackGround="#00545454"
+                app:indicatorNormalDrawable="@drawable/rect_orange"
+                app:indicatorSelectedDrawable="@drawable/rect_blue"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+            <com.sincerly.tbanner.banner.TBanner
+                android:id="@+id/banner3"
+                android:background="#70000000"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                app:autoPlay="true"
+                app:time="2000"
+                app:bannerLayout="@layout/view_layout_banner"
+
+                app:titleBackGround="#00545454"
+                app:indicatorNormalDrawable="@drawable/rect_orange"
+                app:indicatorSelectedDrawable="@drawable/rect_blue"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+            <com.sincerly.tbanner.banner.TBanner
+                android:id="@+id/banner4"
+                android:background="#70000000"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                app:autoPlay="true"
+                app:time="2000"
+                app:bannerLayout="@layout/view_layout_banner"
+                app:titleBackGround="#00545454"
+                app:indicatorNormalDrawable="@drawable/rect_orange"
+                app:indicatorSelectedDrawable="@drawable/rect_blue"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

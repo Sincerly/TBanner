@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TBanner">
+        <!--app:defaultImage   默认加载图片
+        app:autoPlay       自动加载
+        app:direction      指示器方向
+        app:delayTime      延迟时间
+        app:scaleType      图片显示方式
+        app:setScrollerTime  滑动速度
+        app:animation      动画
+        app:indicatorHeight    指示器高度
+        app:indicatorType      指示器类型
+        app:indicatorTextColor 指示器文字颜色
+        app:indicatorTextSize      指示器文字大小
+        app:titleBackgroup 指示器背景色
+        app:repeatMode     滚动模式
+        app:repeatCount    滚动次数
+        app:bannerType     类型-->
+
+        <attr name="defaultImage" format="reference"></attr>
+        <attr name="autoPlay" format="boolean">
+            <enum name="yes" value="1"/>
+            <enum name="no" value="0"/>
+        </attr>
+        <attr name="time" format="integer"/>
+        <attr name="bannerLayout" format="reference"/>
+        <attr name="direction">
+            <flag name="left" value="0"/>
+            <flag name="top" value="1"/>
+            <flag name="right" value="2"/>
+            <flag name="bottom" value="3"/>
+        </attr>
+
+        <attr name="scaleType">
+            <enum name="matrix" value="0" />
+            <enum name="fitXY" value="1" />
+            <enum name="fitStart" value="2" />
+            <enum name="fitCenter" value="3" />
+            <enum name="fitEnd" value="4" />
+            <enum name="center" value="5" />
+            <enum name="centerCrop" value="6" />
+            <enum name="centerInside" value="7" />
+        </attr>
+
+        <attr name="indicatorHeight" format="dimension"/>
+        <attr name="indicatorWidth" format="dimension"/>
+        <attr name="titleBackGround" format="color|reference"/>
+        <attr name="indicatorNormalDrawable" format="reference"/>
+        <attr name="indicatorSelectedDrawable" format="reference"/>
+    </declare-styleable>
+</resources>
