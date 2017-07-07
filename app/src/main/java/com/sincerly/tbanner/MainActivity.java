@@ -29,16 +29,20 @@ public class MainActivity extends AppCompatActivity implements  TBanner.OnBanner
 
 		List<ImageView> list=new ArrayList<>();
 		List<String> titles=new ArrayList<>();
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 6; i++) {
 			ImageView imageView=new ImageView(MainActivity.this);
 			if(i==0){
-				imageView.setImageResource(R.mipmap.lunpo1);
+				imageView.setImageResource(R.mipmap.lunbo1);
 			}else if(i==1){
-				imageView.setImageResource(R.mipmap.lunpo2);
+				imageView.setImageResource(R.mipmap.lunbo2);
 			}else if(i==2){
-				imageView.setImageResource(R.mipmap.lunpo3);
+				imageView.setImageResource(R.mipmap.lunbo3);
 			}else if(i==3){
-				imageView.setImageResource(R.mipmap.lunpo4);
+				imageView.setImageResource(R.mipmap.lunbo4);
+			}else if(i==4){
+				imageView.setImageResource(R.mipmap.lunbo5);
+			}else if(i==5){
+				imageView.setImageResource(R.mipmap.lunbo6);
 			}
 			imageView.setScaleType(ImageView.ScaleType.FIT_XY);
 			list.add(imageView);

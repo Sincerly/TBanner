@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:orientation="vertical">
+             >
 
     <com.sincerly.tbanner.banner.BannerViewPager
         android:id="@+id/viewPager"
@@ -25,30 +25,30 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center"
+            android:gravity="left"
             android:paddingLeft="8dp"
-            android:singleLine="true" android:visibility="gone"
+            android:singleLine="true"
             android:text="这里是标题aaaa"/>
 
         <LinearLayout
             android:orientation="horizontal"
             android:id="@+id/indicatorContainer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="wrap_content">
 
-          >
         </LinearLayout>
 
-        <TextView
-            android:visibility="gone"
-            android:id="@+id/number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="1/7"  android:layout_marginRight="16dp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            />
-    </LinearLayout>
 
+    </LinearLayout>
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:text="1/7"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        />
 </FrameLayout>

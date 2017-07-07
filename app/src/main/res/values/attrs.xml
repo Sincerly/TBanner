@@ -19,18 +19,17 @@
 
         <attr name="defaultImage" format="reference"></attr>
         <attr name="autoPlay" format="boolean">
-            <enum name="yes" value="1"/>
+            <enum name="ye" value="1"/>
             <enum name="no" value="0"/>
         </attr>
         <attr name="time" format="integer"/>
         <attr name="bannerLayout" format="reference"/>
         <attr name="direction">
-            <flag name="left" value="0"/>
-            <flag name="top" value="1"/>
-            <flag name="right" value="2"/>
-            <flag name="bottom" value="3"/>
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
         </attr>
-
         <attr name="scaleType">
             <enum name="matrix" value="0" />
             <enum name="fitXY" value="1" />
@@ -41,11 +40,15 @@
             <enum name="centerCrop" value="6" />
             <enum name="centerInside" value="7" />
         </attr>
-
         <attr name="indicatorHeight" format="dimension"/>
         <attr name="indicatorWidth" format="dimension"/>
         <attr name="titleBackGround" format="color|reference"/>
         <attr name="indicatorNormalDrawable" format="reference"/>
         <attr name="indicatorSelectedDrawable" format="reference"/>
+        <attr name="repeatCount" format="integer"></attr>
+        <attr name="repeatMode" format="integer">
+            <enum name="RESTART" value="1"/>
+            <enum name="REVERSE" value="2"/>
+        </attr>
     </declare-styleable>
 </resources>

@@ -23,4 +23,10 @@ public class BannerViewPager extends ViewPager {
 		getParent().requestDisallowInterceptTouchEvent(true);
 		return super.dispatchTouchEvent(ev);
 	}
+
+
+	@Override
+	public boolean onTouchEvent(MotionEvent ev) {
+		return super.onTouchEvent(ev);
+	}
 }
